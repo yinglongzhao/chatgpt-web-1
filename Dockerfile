@@ -45,6 +45,7 @@ COPY --from=builder /app/chatgpt-web .
 ADD supervisord.conf /etc/supervisord.conf
 ADD config.dev.json /app/config.dev.json
 RUN cp config.dev.json config.json
+EXPOSE 8080
 
 # 通过 Supervisor 管理服务
-#CMD ["/usr/bin/supervisord", "-c", "/etc/supervisord.conf"]
+CMD ["/usr/bin/supervisord", "-c", "/etc/supervisord.conf"]
