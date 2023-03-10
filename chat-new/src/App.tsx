@@ -32,7 +32,7 @@ const initialMessages = [
   {
     type: 'text',
     content: {
-      text: '您好，我是AI助理，开源于：https://github.com/869413421/chatgpt-web。',
+      text: '您好，我是赵英龙造的机器人',
     },
     user: { avatar: '//gitclone.com/download1/gitclone.png' },
   },
