@@ -142,7 +142,7 @@ function GZ() {
         let S = "completion";
         jq.post(S, {messages: pf}).then(b => {
             let x = b.data.data.reply;
-            t({type: "text", content: {text: x}, user: {avatar: "//gitclone.com/download1/gitclone.png"}}),
+            t({type: "text", content: {text: x}, user: {avatar: "/assets/WX20230311-160601@2x.png"}}),
 
                 pf = b.data.data.messages, console.log(pf), o(0)
         }).catch(b => {
